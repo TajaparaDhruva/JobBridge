@@ -1,187 +1,155 @@
-# 🚀 Full Stack Hackathon Event
+# 🚀 CampusHire – Student Job Portal
 
-Welcome to the **Full Stack Hackathon Event!**  
-This event challenges participants to build **real-world full stack applications** by bringing their **own problem statements** and solving them using modern web technologies.
-
----
-
-## 📌 Event Objective
-
-The goal of this event is to encourage participants to:
-
-- Identify a **real-world problem**
-- Design a **complete full stack solution**
-
-Participants must come with their **own problem statement** and implement a solution using the required technologies.
+CampusHire is a **full-stack web application** designed to help students easily find and apply for **internships, part-time jobs, and entry-level opportunities**. The platform connects **students and companies** in one place, allowing companies to post jobs and students to search, apply, and track their applications.
 
 ---
 
-## 🛠 Required Tech Stack
+## 📌 Problem Statement
 
-Your project **must use the following technologies:**
+Many students struggle to find internships and entry-level job opportunities because most job portals are designed for experienced professionals. Students often search across multiple websites and social media groups, which is inefficient and time-consuming.
+
+**CampusHire solves this problem by providing a centralized platform where students can discover, search, and apply for opportunities easily.**
+
+---
+
+## 🎯 Project Objectives
+
+* Provide a **student-focused job discovery platform**
+* Allow companies to **post and manage job listings**
+* Enable students to **search and filter jobs easily**
+* Allow students to **apply for jobs and track their application status**
+* Provide a **calendar-based system to track interviews and responses**
+
+---
+
+## 🛠 Tech Stack
 
 ### Frontend
-- ReactJS
-- Tailwind CSS
+
+* ReactJS
+* Tailwind CSS
+* React Router
+*
 
 ### Backend
-- Node.js
-- Express.js
+
+* Node.js
+* Express.js
 
 ### Database
-- MongoDB
+
+* MongoDB
 
 ---
 
-## 📋 Participation Rules
+## ✨ Features
 
-1. Participants must **bring their own problem statement**.
-2. The problem statement must be solvable using **full stack development**.
-3. The project must use the **required tech stack**.
+### 🔐 Authentication System
 
-### The application should include:
+* User Signup & Login
+* Password validation
+* LocalStorage authentication
+* Protected routes
 
-- **Frontend** – UI using React + Tailwind  
-- **Backend APIs** – Node.js + Express.js  
-- **Database Integration** – MongoDB  
+### 🧭 Routing & Navigation
 
----
+Pages included:
 
-## ⚙️ Common Features (Mandatory for All Projects)
+* Home
+* Login
+* Signup
+* Jobs
+* Post Job
+* Dashboard
+* Calendar
+* Profile
 
-Every project must include the following common features that are generally required in modern full stack applications.
+### 🎨 Theme Support
 
----
+* Dark Mode
+* Light Mode
+* Theme preference saved in LocalStorage
 
-### 1️⃣ Routing & Navigation
-- Implement **client-side routing** using React Router.
-- Proper navigation between pages such as:
-  - Home
-  - Login
-  - Signup
-  - Dashboard
-  - Profile / Settings
+### 🔍 Search, Filtering & Sorting
 
----
+* Search jobs by keyword
+* Filter by location, job type, and salary
+* Sort jobs by latest or highest salary
 
-### 2️⃣ React Hooks Usage
-Participants must demonstrate the usage of important React Hooks:
+### ⚡ Debouncing
 
-- `useState` – for managing component state
-- `useEffect` – for handling side effects such as API calls
-- `useRef` – for DOM access or managing focus
-- `useContext` – for global state sharing
+Optimized search functionality using **debouncing** to reduce unnecessary API calls.
 
----
+### 📄 Pagination
 
-### 3️⃣ State Management
-Projects must implement **global state management** using at least one of the following:
+Efficient job listing with pagination using **MongoDB limit() and skip()**.
 
-- **Redux / Redux Toolkit**
-- **Context API**
+### 🔄 CRUD Operations
 
-This should be used for things like:
-- User authentication state
-- Global settings
-- Shared application data
+Full CRUD functionality for job management.
 
----
+Companies can:
 
-### 4️⃣ Authentication System
-A basic authentication system must be implemented including:
+* Create jobs
+* Read job listings
+* Update job details
+* Delete job posts
 
-- **Signup Page**
-- **Login Page**
-- Password validation
-- Authentication handling (Use LocalStorage for storing and verification purposes)
-- Protected routes for logged-in users
+### 📅 Application Tracking Calendar
 
----
+Students can view:
 
-### 5️⃣ Theme Support
-Applications should include:
+* Application dates
+* Interview schedules
+* Application responses
 
-- **Dark Mode / Light Mode**
-- Toggle option for switching themes
-- Persist theme preference if possible
+### 📊 Dashboard
 
----
+Student Dashboard:
 
-### 6️⃣ Search, Filtering & Sorting
-Applications should provide data filtering features such as:
+* Applied jobs
+* Saved jobs
+* Application status
+* Upcoming interviews
 
-- Search functionality
-- Filter options
-- Sorting options
+Company Dashboard:
 
----
+* Posted jobs
+* Applications received
 
-### 7️⃣ Debouncing
-To optimize performance, implement **debouncing** in features like:
+### 📝 Form Handling & Validation
 
-- Search bars
-- API requests triggered by user typing
+Forms include:
 
----
+* Signup
+* Login
+* Post Job
+* Profile update
 
-### 8️⃣ Pagination
-Applications must implement **pagination** when displaying large datasets.
+Each form includes:
 
-Examples:
-- Product listings
-- Posts
-- Users
-- Tasks
+* Input validation
+* Error messages
+* Controlled React components
 
-Pagination can be implemented using:
-- **Backend pagination (limit & skip in MongoDB)**
-- **Frontend pagination UI**
+### 📱 Responsive UI
 
----
+The application is fully responsive using **Tailwind CSS** and works across:
 
-### 9️⃣ CRUD Operations
-Your application must support basic database operations:
+* Desktop
+* Tablet
+* Mobile
 
-- **Create** data
-- **Read** data
-- **Update** data
-- **Delete** data
+### ⚠️ Error Handling
 
-These operations must interact with **Node.js + Express APIs** and **MongoDB database**.
+* Backend try–catch error handling
+* API error responses
+* Frontend error display
+* Loading states for API requests
 
 ---
 
-### 🔟 API Integration
-- Use **REST APIs** built with Node.js and Express.
-- Proper error handling for API responses.
-- Loading states during API requests.
+## 👨‍💻 Author
 
----
-
-### 1️⃣1️⃣ Form Handling & Validation
-Forms must include:
-
-- Input validation
-- Error messages
-- Proper user feedback
-- Controlled components in React
-
----
-
-### 1️⃣2️⃣ Responsive UI
-The UI must be **fully responsive** using **Tailwind CSS**, ensuring proper display across:
-
-- Desktop
-- Tablet
-- Mobile devices
-
----
-
-### 1️⃣3️⃣ Error Handling
-Applications should handle errors properly:
-
-- Backend error responses
-- Frontend error display
-- Try–catch blocks for API calls
-
----
+Dhruva Tajapara
+Full Stack Developer | Hackathon Participant
